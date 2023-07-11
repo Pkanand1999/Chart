@@ -21,7 +21,7 @@ export default function Googleauth() {
           "email":data.email,
       "picture":data.picture
   }
-             let res= await fetch(`${import.meta.env.VITE_AUTH_URL}/googlelogin`,{
+             let res= await fetch(`http://localhost:8080/api/v1/auth/googlelogin`,{
               method: 'POST',
               headers:{
                   "content-type": "application/json",
