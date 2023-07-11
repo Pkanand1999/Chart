@@ -19,7 +19,7 @@ app.use('/api/v1/auth',authRoute)
 
 // listining port 
 const port=process.env.PORT
-
+Database();
 app.listen(port,()=>{
     console.log('listening on port',port);
 });
