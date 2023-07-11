@@ -23,7 +23,7 @@ async function register(data){
     const a=bcrypt.hash(data.password, SALT_ROUND)
    data.password =await a;
     if(userExist){ throw new Error('User already exists with the given email')}
-    let user = await User.create({name:data.name,email:data.email,password:data.password,authMode:"email-password",image:faker.internet.avatar(),credit:4});
+    let user = await User.create({name:data.name,email:data.email,password:data.password,authMode:"email-password",image:faker.internet.avatar()});
     user.toJSON();
     delete user.password;
     return user;
@@ -73,7 +73,7 @@ async function loginByGoogle(data){
         let user = {...userExist}
         return {user};
     }
-    let user = await User.create({name:data.name,email:data.email,image:data.picture,authMode:"google-redirect",credit:4});
+    let user = await User.create({name:data.name,email:data.email,image:data.picture,authMode:"google-redirect"});
     user=user.toJSON();
     console.log(user);
     let token=await generateToken(user);

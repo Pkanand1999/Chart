@@ -17,15 +17,8 @@ const UserSchema = new mongoose.Schema({
     image:{
         type: String,
     },
-    credit:{
-        type: Number,
-    },
     authMode:{
         type: String,
-    },
-    subscription: {
-        type: String,
-        default: ""
     }
 }, {
     timestamps: true
