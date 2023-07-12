@@ -3,7 +3,7 @@ import axios from "axios";
 
 export function userIsLoggedIn(authToken,dispatch){
     console.log("user is logged in")
-      fetch(`${import.meta.env.VITE_AUTH_URL}/loggedInUser`, {
+      fetch(`http://localhost:8080/api/v1/auth/loggedInUser`, {
           headers: {
             'authorization': `Bearer ${authToken}`
           }
