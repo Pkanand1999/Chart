@@ -47,6 +47,7 @@ UserAuth.get('/loggedInUser', authLoginUser, async (req, res) => {
 
 UserAuth.post('/googlelogin',async function(req, res) {
     let data = req.body;
+    console.log(data)
     try{
         let user =await loginByGoogle(data);
         console.log(user);

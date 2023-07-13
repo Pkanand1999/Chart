@@ -3,7 +3,7 @@ const cors=require('cors');
 const morgan=require('morgan');
 const Database = require('./config/db');
 const authRoute = require("./router/authRouter")
-
+require('dotenv').config()
 const app = express();
 
 // middleware
