@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router';
 
 
 export default function Navbar() {
-  const nevigate = useNavigate();
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const userData = useSelector((data) => {
     return data.reducerAuth
@@ -13,29 +13,27 @@ export default function Navbar() {
   console.log(userData.image)
 
   let authToken = userData.token;
-  if (!authToken) {
-    nevigate("/auth")
-  }
+ 
 
   useEffect(() => {
     if (authToken) {
       userIsLoggedIn(authToken, dispatch);
     }
     if (!authToken) {
-      nevigate("/auth")
+      navigate("/auth")
     }
 
   }, [authToken])
   return (
     <>
       {/* navbar ////// */}
-      <div className='w-full h-16 border-2 flex justify-around items-center'>
+      <div className='w-full h-16 flex justify-around items-center'>
         <div className='flex w-7/12'>
           <h1 className='text-2xl font-bold'>Dashboard</h1>
         </div>
         <div className='flex w-4/12 justify-around items-center'>
           {/* search  */}
-          <div className='flex w-6/12 bg-white text-gray-600 p-1 rounded-md justify-around items-center'>
+          <div className='flex w-6/12 bg-white text-gray-600 p-1 rounded-xl justify-around items-center'>
             <input type="search" className='p-0 pl-2 w-10/12 border-none ' placeholder='Search' />
             <i className="fa-solid fa-magnifying-glass w-1/12"></i>
           </div>

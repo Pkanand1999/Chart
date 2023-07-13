@@ -17,6 +17,7 @@ export default function Googleauth() {
                 }
             );
             let data=Userdata.data;
+            console.log(data);
               let thdata={"name":data.name,
           "email":data.email,
       "picture":data.picture

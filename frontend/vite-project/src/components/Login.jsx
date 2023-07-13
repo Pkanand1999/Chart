@@ -19,8 +19,6 @@ function getList(e){
  function loginUser(){
  login(user,dispatch)
 
-  navigate("/");
-
 }
 
 useEffect(()=>{

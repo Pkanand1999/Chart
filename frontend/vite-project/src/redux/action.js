@@ -37,7 +37,7 @@ export function userIsLoggedIn(authToken,dispatch){
   }
 
   export function login(data,dispatch){
-    axios.post(`http://localhost:8080/api/v1/auth/login`,{...data} )
+    axios.post(`http://localhost:8080/api/v1/auth/login`,data )
         .then((res)=>{
             console.log(res.data)
             localStorage.setItem('token',res.data.token)
