@@ -1,6 +1,7 @@
 import Navbar from "../components/navbar";
 import Sidebar from "../components/Sidebar";
 import List from "../components/List";
+import LineChart from "../components/LineChart";
 
 function Dashboard() {
   return (
@@ -9,6 +10,7 @@ function Dashboard() {
       <div className="w-9/12">
       <Navbar/>
       <List/>
+      <LineChart/>
       </div>
     </div>
   )
