@@ -11,9 +11,7 @@ function LineChart() {
   return (
     <>{/* chart  */}
     <div className='h-[38%] rounded-2xl'>
-        {/* <div style={{height:"100% ",width:"50% "}} > */}
         <Chart  chartType="LineChart" height="100%" className='p-6 rounded-xl' options={options} data={data} />
-        {/* </div> */}
     </div>
     <div className=' w-[100%] h-2/6'>
 <Pie/>
