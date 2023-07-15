@@ -5,7 +5,7 @@ export default function Sidebar() {
   return (
     <>
     {/* sidebar */}
-    <div className='w-3/12 h-screen flex justify-center items-center p-5'>
+    <div className='md:w-5/12 lg:w-4/12 h-screen flex justify-center items-center p-5 xl:w-3/12'>
         <div className='w-10/12 bg-black text-white flex h-full rounded-3xl justify-center items-center p-5 '>
           <div className=' flex flex-col w-11/12 h-full p-4 content-between '>
             <div className='h-5/6'>
