@@ -11,7 +11,7 @@ setSignup(false)
 function changetosignup(){
 setSignup(true)
 }
-
+console.log(`${import.meta.env.VITE_AUTH_URL}`)
 
 
   return (
