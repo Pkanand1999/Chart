@@ -42,7 +42,6 @@ function List() {
           </div>
         </div>
       </div>
-      {/* list  */}
     </>
   )
 }
