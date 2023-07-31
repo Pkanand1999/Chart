@@ -43,7 +43,7 @@ function List() {
         </div>
       </div>
     </>
-    // list ......end..............
+    // list ......end..........
   )
 }
 
