@@ -24,7 +24,6 @@ export default LineChart
 
 const data = [
     ["week", "Guest", "User"],
-    ["",0,0],
     ["week1", 366, 133],
     ["Week2", 211, 244],
     ["week3", 388, 199],
