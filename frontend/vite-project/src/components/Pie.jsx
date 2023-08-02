@@ -16,7 +16,7 @@ function Pie() {
 export default Pie
 
 export const data = [
-    ["Task", "Hours per Day"],
+    ["Task", "Per Day"],
     ["Basic Tees", 2],
     ["Costum Short Pants", 2],
     ["Super Hoodies", 7],
